@@ -6,7 +6,7 @@ services:
         environment:
             - REDIS_URL=redis://database:6379
         expose:
-            - "8080"
+            - "8000"
 
     database:
         image: redislabs/redismod
