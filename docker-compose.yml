@@ -2,13 +2,13 @@ version: '3'
 
 services:
     auth:
-        ports:
-            - 8080:8080
         build: ./
         environment:
             - REDIS_URL=redis://database:6379
         networks:
             - auth-net
+        expose:
+            - "8080"
 
     database:
         image: redislabs/redismod
