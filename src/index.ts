@@ -13,6 +13,6 @@ app.get("/", async (req, res) => {
     res.json(await req.redis.keys("*"));
 });
 
-app.listen(8080, () => {
-    console.log("Listening on", 8080);
+app.listen(8000, () => {
+    console.log("Listening on", 8000);
 })
